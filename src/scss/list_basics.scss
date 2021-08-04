@@ -1,0 +1,24 @@
+@use "sass:list";
+
+$padding: 0.5rem, 1rem, 2rem;
+
+@debug ----------- LIST OPERATIONS -----------;
+
+@debug 'list.nth($padding, 2)';
+@debug list.nth($padding, 2);
+
+//Not mutating the $padding list!!!
+@debug 'list.append($padding, 3rem)';
+@debug list.append($padding, 3rem);
+
+@debug 'list.length($padding)';
+@debug list.length($padding);
+
+@debug 'list.separator($padding)';
+@debug list.separator($padding);
+
+@debug 'list.join($padding, (4rem, 5rem))';
+@debug list.join($padding, (4rem, 5rem));
+
+@debug 'list.index($padding, 2rem)';
+@debug list.index($padding, 2rem);
