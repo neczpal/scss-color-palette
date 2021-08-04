@@ -2,7 +2,7 @@
 @use "sass:list";
 
 // Splits a string by $separator and returns a list of strings
-@function get-keys($string, $separator: '>') {
+@function get-keys($string, $separator: '-') {
   $keys: ();
   $index: string.index($string, $separator);
   @while $index {

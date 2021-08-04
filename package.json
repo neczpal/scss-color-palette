@@ -13,7 +13,8 @@
   "author": "Neczpal Abel",
   "scripts": {
     "build": "sass src/scss/style.scss dist/css/main.css",
+    "build-colorful": "sass src/scss/style.scss dist/css/colorful.css",
+    "build-monochrome": "sass src/scss/style.scss dist/css/monochrome.css",
     "watch": "sass --watch src/scss/style.scss dist/css/main.css"
-  },
-  "devDependencies": {}
+  }
 }

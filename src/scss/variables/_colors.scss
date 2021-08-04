@@ -4,11 +4,20 @@ $colors: (
                 'white': #efefef
         ),
         theme: (
-                'sea-green-crayola': #23f0c7ff,
-                'light-coral': #ef767aff,
-                'middle-blue-purple': #7d7abcff,
-                'liberty': #6457a6ff,
-                'minion-yellow': #ffe347ff
+                colorful: (
+                        'green': #23f0c7ff,
+                        'coral': #ef767aff,
+                        'purple': #7d7abcff,
+                        'liberty': #6457a6ff,
+                        'yellow': #ffe347ff
+                ),
+                monochrome: (
+                        'black': #0a0908ff,
+                        'gunmetal': #22333bff,
+                        'cultured': #f2f4f3ff,
+                        'grullo': #a9927dff,
+                        'umber': #5e503fff
+                )
         ),
         lights: (
                 dark: -20%,
