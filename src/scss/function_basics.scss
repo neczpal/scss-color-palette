@@ -30,8 +30,8 @@
   @return $sum;
 }
 
-@debug 'sum2(2)';
-@debug sum2(2, 3, 5, 6, 6353);
+@debug 'sum2(1, 1, 2, 3, 5)';
+@debug sum2(1, 1, 2, 3, 5);
 
 @function splice($list, $start, $count: 1) {
   $length: list.length($list);
@@ -51,6 +51,7 @@
   @return $new-list;
 }
 
-$asd: 2, 3, 4, 5;
+$list: 2, 3, 4, 5;
 
-@debug splice($asd, 2, 2);
+@debug 'splice($list, 2, 2)';
+@debug splice($list, 2, 2);
