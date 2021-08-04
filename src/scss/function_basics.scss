@@ -32,3 +32,25 @@
 
 @debug 'sum2(2)';
 @debug sum2(2, 3, 5, 6, 6353);
+
+@function splice($list, $start, $count: 1) {
+  $length: list.length($list);
+
+  @if ($length < $start) {
+    @error "Element not exists!";
+  }
+
+  $new-list: ();
+  $end: $start + $count;
+  @for $i from 1 through $length {
+    @if ($start > $i or $i >= $end) {
+      $new-list: list.append($new-list, list.nth($list, $i));
+    }
+  }
+
+  @return $new-list;
+}
+
+$asd: 2, 3, 4, 5;
+
+@debug splice($asd, 2, 2);
