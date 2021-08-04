@@ -1,0 +1,7 @@
+@mixin generate-colors($palette) {
+  @each $key, $value in $palette {
+    .u-color--#{$key} {
+      color: $value;
+    }
+  }
+}
