@@ -1,0 +1,33 @@
+@use "sass:map";
+
+$colors: (
+        success: green,
+        warning: orange,
+        danger: red
+);
+
+$base-colors: (
+        black: black,
+        white: white
+);
+
+@debug ----------- MAP OPERATIONS -----------;
+
+@debug 'map.get($map: $colors, $key: success)';
+@debug map.get($map: $colors, $key: success);
+
+@debug 'map.has-key($map: $colors, $key: success)';
+@debug map.has-key($map: $colors, $key: success);
+
+@debug 'map.keys($map: $colors)';
+@debug map.keys($map: $colors);
+
+@debug 'map.merge($colors, $base-colors)';
+@debug map.merge($colors, $base-colors);
+
+//Doesn't mutate map
+@debug 'map.remove($colors, success)';
+@debug map.remove($colors, success);
+
+@debug '$colors';
+@debug $colors;

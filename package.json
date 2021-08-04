@@ -1,0 +1,19 @@
+{
+  "name": "color-palette",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "color",
+    "palette",
+    "scss",
+    "neczpal",
+    "abel"
+  ],
+  "license": "",
+  "author": "Neczpal Abel",
+  "scripts": {
+    "build": "sass src/scss/style.scss dist/css/main.css",
+    "watch": "sass --watch src/scss/style.scss dist/css/main.css"
+  },
+  "devDependencies": {}
+}
