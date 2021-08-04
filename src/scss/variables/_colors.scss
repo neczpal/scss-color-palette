@@ -1,20 +1,20 @@
 $colors: (
         base: (
-                black: #222,
-                white: #efefef
+                'black': #222,
+                'white': #efefef
         ),
         theme: (
-                sea-green-crayola: #23f0c7ff,
-                light-coral: #ef767aff,
-                middle-blue-purple: #7d7abcff,
-                liberty: #6457a6ff,
-                minion-yellow: #ffe347ff
+                'sea-green-crayola': #23f0c7ff,
+                'light-coral': #ef767aff,
+                'middle-blue-purple': #7d7abcff,
+                'liberty': #6457a6ff,
+                'minion-yellow': #ffe347ff
         ),
         lights: (
-                dark: -20,
-                medium-dark: -10,
-                normal: 0,
-                medium-light: 10,
-                light: 20
+                dark: -20%,
+                medium-dark: -10%,
+                normal: 0%,
+                medium-light: 10%,
+                light: 20%
         )
 );

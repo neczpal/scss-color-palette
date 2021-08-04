@@ -1,10 +1,11 @@
 @use "../variables/colors";
 @use "../mixins/texts";
 @use "sass:map";
+@use "../functions/var" as *;
 
 .text {
   font: 1rem/1.5 Arial, Helvetica, sans-serif;
   padding: 1rem 0;
 }
 
-@include texts.generate-colors(map.get(colors.$colors, theme), map.get(colors.$colors, base));
+@include texts.generate-colors(map.merge(var(theme), var(base)));

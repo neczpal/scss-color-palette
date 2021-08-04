@@ -1,5 +1,6 @@
 @use "../variables/colors";
 @use "../mixins/backgrounds";
+@use "../functions/var" as *;
 @use "sass:map";
 
-@include backgrounds.generate-background-colors(map.get(colors.$colors, theme), map.get(colors.$colors, lights));
+@include backgrounds.generate-background-colors(var(theme), var(lights));

@@ -1,8 +1,6 @@
 @use "sass:map";
 
-@mixin generate-colors($palette, $base-colors) {
-  $main-palette: map.merge($palette, $base-colors);
-
+@mixin generate-colors($main-palette) {
   @each $key, $value in $main-palette {
     .u-color--#{$key} {
       color: $value;
