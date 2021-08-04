@@ -1,7 +1,18 @@
-@mixin generate-background-colors($palette) {
+@use "sass:color";
+
+@mixin generate-background-colors($palette, $lights) {
   @each $key, $value in $palette {
-    .u-bg-color--#{$key} {
-      background-color: $value;
+
+    @each $light-key, $light-value in $lights {
+      @if ($light-key != "normal") {
+        .u-bg-color--#{$key}-#{$light-key} {
+          background-color: color.adjust($value, $lightness: $light-value);
+        }
+      } @else {
+        .u-bg-color--#{$key} {
+          background-color: $value;
+        }
+      }
     }
   }
 }

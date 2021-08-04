@@ -4,4 +4,12 @@ $colors: (
         middle-blue-purple: #7d7abcff,
         liberty: #6457a6ff,
         minion-yellow: #ffe347ff
-)
+);
+
+$color-lights: (
+  dark: -20,
+  medium-dark: -10,
+  normal: 0,
+  medium-light: 10,
+  light: 20
+);
