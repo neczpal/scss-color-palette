@@ -3,4 +3,4 @@
 @use "../functions/var" as *;
 @use "sass:map";
 
-@include backgrounds.generate-background-colors(var(theme-monochrome), var(lights));
+@include backgrounds.generate-background-colors(var(theme-colorful), var(lights));

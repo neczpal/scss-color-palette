@@ -8,4 +8,4 @@
   padding: 1rem 0;
 }
 
-@include texts.generate-colors(map.merge(var(theme-monochrome), var(base)));
+@include texts.generate-colors(map.merge(var(theme-colorful), var(base)));
