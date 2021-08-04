@@ -1,0 +1,46 @@
+.text {
+  font: 1rem/1.5 Arial, Helvetica, sans-serif;
+  padding: 1rem 0;
+}
+
+.text--sea-green-crayola {
+  color: #23f0c7ff;
+}
+
+.text--bg-sea-green-crayola {
+  background-color: #23f0c7ff;
+}
+
+.text--light-coral {
+  color: #ef767aff;
+}
+
+.text--bg-light-coral {
+  background-color: #ef767aff;
+}
+
+.text--middle-blue-purple {
+  color: #7d7abcff;
+}
+
+.text--bg-middle-blue-purple {
+  background-color: #7d7abcff;
+}
+
+.text--liberty {
+  color: #6457a6ff;
+}
+
+.text--bg-liberty {
+  background-color: #6457a6ff;
+}
+
+.text--minion-yellow {
+  color: #ffe347ff;
+}
+
+.text--bg-minion-yellow {
+  background-color: #ffe347ff;
+}
+
+/*# sourceMappingURL=main.css.map */
